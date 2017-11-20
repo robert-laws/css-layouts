@@ -1,0 +1,53 @@
+div.gradients-css div {
+  display: inline-block;
+}
+
+div.gradients {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: linear-gradient(black, white);
+  color: #FFF;
+}
+
+div.gradients2 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: linear-gradient(135deg, red, white);
+  color: #FFF;
+}
+
+div.gradients3 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: linear-gradient(to right, red, white);
+  color: #FFF;
+}
+
+div.gradients4 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: repeating-linear-gradient(90deg, olive, white 2px, green 10px);
+  color: #FFF;
+}
+
+div.gradients5 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: repeating-linear-gradient(45deg, black, black 1px, white 3px, white 3px);
+  color: #FFF;
+}
