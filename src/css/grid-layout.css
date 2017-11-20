@@ -1,0 +1,27 @@
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 300px 300px 300px; */
+  grid-template-columns: 1fr 1fr 1fr; /* fr = fraction, use 1fr three times for 3 equal columns, relative unit to container */
+  /* grid-template-columns: 2fr 1fr; */
+  grid-template-rows: 400px 300px;
+  /* grid-column-gap: 10px;
+  grid-row-gap: 20px; */
+  grid-gap: 10px 20px;
+}
+
+.grid-item {
+  border: 1px solid #222;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}

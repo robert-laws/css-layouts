@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robert-laws/CSS-focus.git"
+    "url": "git+https://github.com/robert-laws/css-layouts.git"
   },
   "keywords": [
     "CSS",
@@ -18,9 +18,9 @@
   "author": "Robert Laws",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/robert-laws/CSS-focus/issues"
+    "url": "https://github.com/robert-laws/css-layouts/issues"
   },
-  "homepage": "https://github.com/robert-laws/CSS-focus#readme",
+  "homepage": "https://github.com/robert-laws/css-layouts#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",

@@ -1,5 +1,4 @@
 var gulp = require('gulp')
-var rename = require('gulp-rename')
 var sass = require('gulp-sass')
 var cleanCSS = require('gulp-clean-css')
 var concat = require('gulp-concat')

@@ -2,3 +2,56 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-Regular.ttf') format('ttf'),
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-style: italic;
+  src: url('../fonts/OpenSans-Italic.ttf') format('ttf'),
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: bold;
+  src: url('../fonts/OpenSans-Bold.ttf') format('ttf'),
+}
+
+div.parent {
+  margin: 10px;
+  border: 1px solid #CCC;
+  width: 500px;
+  height: 300px;
+
+  img {
+    width: 100px;
+    border: 1px solid #000;
+    float: left;
+  }
+  
+  p {
+    clear: both;
+  }
+}
+
+div.parent2 {
+  margin: 10px;
+  border: 1px solid #CCC;
+  width: 500px;
+  height: 300px;
+
+  img {
+    display: block;
+    width: 80px;
+    border: 1px solid #000;
+  }
+
+  img.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+}

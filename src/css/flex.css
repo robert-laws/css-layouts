@@ -1,0 +1,22 @@
+.flex-container {
+  margin-bottom: 100px;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  justify-content: space-around;
+
+}
+
+.flex-item {
+  border: 1px solid blue;
+  padding: 20px;
+  width: 20%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
