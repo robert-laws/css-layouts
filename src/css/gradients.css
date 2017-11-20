@@ -1,5 +1,6 @@
 div.gradients-css div {
   display: inline-block;
+  box-sizing: border-box;
 }
 
 div.gradients {
@@ -49,5 +50,103 @@ div.gradients5 {
   height: 200px;
   border: 1px solid #CCC;
   background-image: repeating-linear-gradient(45deg, black, black 1px, white 3px, white 3px);
+  color: #FFF;
+}
+
+div.radial {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: radial-gradient(black, white);
+  color: #FFF;
+}
+
+div.radial2 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: radial-gradient(circle, white, black);
+  color: #FFF;
+}
+
+div.radial3 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: radial-gradient(circle at 100% 50%, white, black);
+  color: #FFF;
+}
+
+div.radial3-1 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: radial-gradient(circle 80px, white, black);
+  color: #FFF;
+}
+
+div.mountain {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image: url('../img/m4.jpg');
+}
+
+div.radial4 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(circle at 100% 50%,#fff,#000);
+  color: #fff;
+  opacity: 0.75;
+  top: -10px;
+  left: -10px;
+}
+
+div.radial5 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  /* background-image: radial-gradient(farthest-corner circle at 0% 100%, white, black,
+  white, black); */
+  background-image: radial-gradient(circle at 65% 95%, red, black);
+  color: #FFF;
+}
+
+div.radial6 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  /* background-image: radial-gradient(farthest-corner circle at 0% 100%, white, black,
+  white, black); */
+  /* background-image: repeating-radial-gradient(circle farthest-corner, white,
+  red 5px, white 10px); */
+  background-image: repeating-radial-gradient(circle, black, white 20%);
+  color: #FFF;
+}
+
+div.radial7 {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #CCC;
+  background-image:
+  radial-gradient(closest-side circle at 50% 50%, white, red 95%, transparent),
+  radial-gradient(circle at 65% 95%, red, black);
   color: #FFF;
 }
