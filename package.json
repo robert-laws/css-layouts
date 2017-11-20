@@ -1,0 +1,33 @@
+{
+  "name": "css-focus",
+  "version": "1.0.0",
+  "description": "Focus on CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-laws/CSS-focus.git"
+  },
+  "keywords": [
+    "CSS",
+    "CSS3",
+    "Sass"
+  ],
+  "author": "Robert Laws",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robert-laws/CSS-focus/issues"
+  },
+  "homepage": "https://github.com/robert-laws/CSS-focus#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}
