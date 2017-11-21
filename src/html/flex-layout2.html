@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Layout</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    #flexible {
+      border: 2px solid #000;
+      margin-bottom: 20px;
+      display: flex;      
+      flex-direction: row;
+    }
+
+    #flexible div {
+      color: #FFF;
+      padding: 20px;
+      border: 2px solid #000;
+      flex: 1;
+    }
+
+    #flexible div:nth-child(even) {
+      background-color: red;
+    }
+
+    #flexible div:nth-child(odd) {
+      background-color: #1D5;
+    }
+    
+    #flexible div:nth-child(2) {
+      /* flex: 1 2 150px; */
+    }
+    
+    #flexible div:nth-child(3) {
+
+    }
+
+    @media screen and (max-width: 600px) {
+      #flexible {
+        flex-direction: column;
+      }
+
+      #flexible div:nth-child(2) {
+        flex: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="flexible">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+    <div>Item 6</div>
+    <div>Item 7</div>
+    <div>Item 8</div>
+  </div>
+
+  <div id="flexible">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+      <div>Item 6</div>
+      <div>Item 7</div>
+      <div>Item 8</div>
+    </div>
+</body>
+</html>
