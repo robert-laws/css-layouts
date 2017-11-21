@@ -55,3 +55,57 @@ div.parent2 {
     left: 20px;
   }
 }
+
+/******** FLEXBOX **************/
+
+.flex-container {
+  border: 4px solid #000;
+  margin-bottom: 100px;
+  display: flex;
+  // flex-flow: row wrap;
+  // align-items: stretch;
+  // justify-content: space-around;
+  flex-direction: row;
+  // justify-content: space-around;
+  // align-content: flex-start;
+}
+
+.flex-item {  
+  padding: 1em;
+  text-align: center;
+  color: #FFF;
+  flex: 1;
+  
+  P {
+    text-align: left;
+  }
+}
+
+.flex-item:first-child {
+  background-color: rgb(255, 102, 102);
+  flex: 0 0 50%;
+}
+
+.flex-item:nth-child(2) {
+  background-color: #1AD;
+}
+
+.flex-item:nth-child(3) {
+  background-color: #54A;
+}
+
+.flex-item:nth-child(4) {
+  background-color: #7D3;
+}
+
+.flex-item:nth-child(5) {
+  background-color: #6DD;
+}
+
+.flex-item:nth-child(6) {
+  background-color: #A44;
+}
+
+.flex-item:last-child {
+  background-color: #1F2;
+}
