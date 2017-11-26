@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox in Action</title>
+  <style>
+    html,
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      margin: 0 0 12px;
+    }
+
+    nav {
+      display: flex;
+      border-bottom: 1px solid #CCC;
+    }
+    
+    a {
+      margin: 0 5px;
+      padding: 6px 20px;
+      border-radius: 3px 3px 0 0;
+      background-color: #FA1252;
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    a:hover, a:focus, a:active {
+      background-color: #1A4521;
+    }
+
+    main article {
+      display: flex;
+      flex-flow: wrap column;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border: 1px dashed #CCC;
+      box-sizing: border-box;
+      height: 20em;
+    }
+
+    main article .flex-item {
+      border: 1px solid #DDD;
+      text-align: center;
+      background-color: #FA9;
+      padding: 20px 15px;
+      margin: 5px;
+      width: 5em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Link # 1</a>
+      <a href="#">Link # 2</a>
+      <a href="#">Link # 3</a>
+      <a href="#">Link # 4</a>
+      <a href="#">Link # 5</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <div class="flex-item">1<br>1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5<br>5<br>5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">12</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+      <div class="flex-item">16</div>
+      <div class="flex-item">17</div>
+    </article>
+  </main>
+</body>
+</html>
