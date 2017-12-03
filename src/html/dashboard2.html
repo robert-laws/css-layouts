@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard 2</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    header { background-color: #1c4; border-bottom: 1px solid #BBB; }
+    header ul { display: flex; list-style: none; }
+    header ul li {padding: 10px 20px; color: #FFF; border-right: 1px solid #BBB; }
+    header ul li a { text-decoration: none; color: #FFF; }
+    .empty-nav-item { flex-grow: 2; }
+    main { flex: 1; display: flex; flex-direction: column; }
+    main article { display: flex; flex-direction: row; flex-wrap: wrap; flex: 1; }
+    main article section { background-color: #A24; padding: 40px; color: #FFF; border: 1px solid #BBB; flex-grow: 1; }
+    .item-1 { min-width: 400px; }
+    .item-2 { min-width: 400px; }
+    .item-3 { min-width: 400px; }
+    .item-4 { min-width: 400px; }
+    .item-5 { min-width: 400px; }
+    .item-6 { min-width: 400px; }
+    footer { background-color: #1c4; display: flex; justify-content: center; }
+    footer div { color: #FFF; padding: 20px; }
+    @media screen and (max-width: 800px) {
+      .empty-nav-item {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <ul>
+      <li>Logo</li>
+      <li><a href="#">item #1</a></li>
+      <li><a href="#">item #2</a></li>
+      <li><a href="#">item #3</a></li>
+      <li><a href="#">item #4</a></li>
+      <li class="empty-nav-item"></li>
+      <li><a href="#">item #5</a></li>
+      <li><a href="#">item #6</a></li>
+    </ul>
+  </header>
+  <main>
+    <article>
+      <section class="item-1">Graph # 1</section>
+      <section class="item-2">Graph # 2</section>
+      <section class="item-3">Graph # 3</section>
+      <section class="item-4">Graph # 4</section>
+      <section class="item-5">Graph # 5</section>
+      <section class="item-6">Graph # 6</section>
+    </article>
+  </main>
+  <footer>
+    <div>Footer Info</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Data Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header, nav {
+      border: 1px solid #BBB;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+    }
+    nav ul li {
+      background-color: #E1A;
+      padding: 20px;
+      border-right: 1px solid #BBB;
+    }
+    nav ul li a {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    main article {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    main article section {
+      background-color: #A24;
+      padding: 40px;
+      color: #FFF;
+      border: 1px solid #BBB;
+      flex-grow: 1;
+    }
+
+    .item-1 {
+      width: 600px;
+      height: 250px;
+    }
+    .item-2 {
+      width: 300px;
+    }
+    .item-3 {
+      width: 700px;
+    }
+    .item-4 {
+      width: 400px;
+    }
+
+    footer {
+      display: flex;
+      background-color: #dAA;
+      justify-content: center;
+    }
+
+    footer nav {
+      padding: 20px;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>    
+    <nav>
+      <ul>
+        <img src="http://via.placeholder.com/100x50" alt="image">
+        <li><a href="#">Link #1</a></li>
+        <li><a href="#">Link #2</a></li>
+        <li><a href="#">Link #3</a></li>
+        <li><a href="#">Link #4</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <article>
+      <section class="item-1">Graph # 1</section>
+      <section class="item-2">Graph # 2</section>
+      <section class="item-3">Graph # 3</section>
+      <section class="item-4">Graph # 4</section>
+      <section class="item-5">Graph # 5</section>
+      <section class="item-6">Graph # 6</section>
+    </article>
+  </main>
+
+  <footer>
+    <nav>
+      footer navigation one
+    </nav>
+    <nav>
+      footer navigation two
+    </nav>
+  </footer>
+</body>
+</html>
