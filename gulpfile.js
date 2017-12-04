@@ -3,11 +3,10 @@ var sass = require('gulp-sass')
 var cleanCSS = require('gulp-clean-css')
 var concat = require('gulp-concat')
 var babelify = require('babelify')
-var browserify = require('gulp-browserify')
+var browserify = require('browserify')
 var sourcemaps = require('gulp-sourcemaps')
 var source = require('vinyl-source-stream')
 var buffer = require('vinyl-buffer')
-var plugins = require('gulp-load-plugins')
 var browserSync = require('browser-sync').create()
 
 gulp.task('browserSync', function() {
@@ -31,12 +30,34 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('./dist/fonts'))
 })
 
+// gulp.task('scripts', function() {
+//   return gulp.src('./src/js/*.js')
+//     .pipe(browserify({
+//       transform: ['babelify']
+//     }))
+//     .pipe(concat('app.js'))
+//     .pipe(gulp.dest('./dist/js'))
+//     .pipe(browserSync.reload({
+//       stream: true
+//     }))
+// })
+
 gulp.task('scripts', function() {
-  return gulp.src('./src/js/*.js')
-    .pipe(browserify({
-      transform: ['babelify']
+  var b = browserify({
+    entries: './src/js/activePage.js',
+    debug: true,
+    transform: [babelify.configure({
+      presets: ['es2015']
+    })]
+  })
+
+  return b.bundle()
+    .pipe(source('./app.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({
+      loadMaps: true
     }))
-    .pipe(concat('app.js'))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.reload({
       stream: true
