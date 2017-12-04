@@ -2,7 +2,12 @@ var gulp = require('gulp')
 var sass = require('gulp-sass')
 var cleanCSS = require('gulp-clean-css')
 var concat = require('gulp-concat')
+var babelify = require('babelify')
+var browserify = require('gulp-browserify')
 var sourcemaps = require('gulp-sourcemaps')
+var source = require('vinyl-source-stream')
+var buffer = require('vinyl-buffer')
+var plugins = require('gulp-load-plugins')
 var browserSync = require('browser-sync').create()
 
 gulp.task('browserSync', function() {
@@ -28,7 +33,9 @@ gulp.task('fonts', function() {
 
 gulp.task('scripts', function() {
   return gulp.src('./src/js/*.js')
-    .pipe(sourcemaps.init())
+    .pipe(browserify({
+      transform: ['babelify']
+    }))
     .pipe(concat('app.js'))
     .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.reload({
@@ -60,7 +67,7 @@ gulp.task('images', function() {
 gulp.task('watch', ['browserSync', 'build'], function() {
   gulp.watch('./src/html/**/*.html', ['html'])
   gulp.watch('./src/js/**/*.js', ['scripts'])
-  gulp.watch(['./src/sass/**/*.scss','./src/css/*.css'], ['css'])
+  gulp.watch(['./src/sass/**/*.scss', './src/css/*.css'], ['css'])
   gulp.watch('./src/img/*', ['images'])
   gulp.watch('./src/fonts/*', ['fonts'])
 })
