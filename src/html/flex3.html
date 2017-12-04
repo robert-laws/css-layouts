@@ -5,8 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flexbox</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    header { background-color: #F11; color: #FFF; }    
+    nav { display: flex; flex-wrap: wrap; justify-content: flex-start; }
+    nav h1 { padding: 5px 15px; }
+    nav a { padding: 10px 20px; background-color: #19A; text-decoration: none; color: #FFF; }
+    nav a:hover { background-color: #99A;}
+    main { flex: 1; display: flex; justify-content: center; }
+    article { flex: 6; background-color: #DDD; padding: 20px; }
+    aside { flex: 1; background-color: #EEE; text-align: center; padding: 20px; }
+    footer { background-color: #FAA; padding: 20px; }
+  </style>
 </head>
 <body>
-  <h1>Flexbox</h1>
+  <header>
+    <nav>
+      <h1>Flexbox</h1>
+      <a href="#">Link #1</a>
+      <a href="#">Link #2</a>
+      <a href="#">Link #3</a>
+      <a href="#">Link #4</a>
+    </nav>
+  </header>
+  <main>
+    <aside>
+      Left Aside
+    </aside>
+    <article>
+      Main Article
+    </article>
+    <aside>
+      Right Aside
+    </aside>
+  </main>
+  <footer>
+    Footer Content
+  </footer>
 </body>
 </html>
